@@ -1,6 +1,6 @@
 languageCode: "en-us"
-title: "CoZ:City of Zion"
-baseURL: "https://cityofzion.io/"
+title: "Hybrid.Network"
+baseURL: "https://hybrid.network/"
 pygmentsStyle: "monokai"
 pygmentsUseClasses: true
 MetaDataFormat: "yaml"
@@ -8,6 +8,4 @@ permalinks:
   post: /:year/:month/:title/
 
 params:
-  github: CityOfZion
-  twitter: coz_official
-  googleAnalyticsUserID: "UA-XXX"
+  github: hybridnetwork

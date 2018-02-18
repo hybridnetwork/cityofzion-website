@@ -102,7 +102,7 @@ a, a:link {
     font-size: 40px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    background: transparent url("/images/coz-icon-white.png") top 4px left no-repeat;
+    background: transparent url("/images/hn-icon-white.png") top 4px left no-repeat;
     background-size: 44px;
     padding-left: 60px;
     margin-bottom: 16px;
@@ -117,11 +117,11 @@ a, a:link {
     padding: 0 15px 0 30px;
     margin: 0 0 0 -15px;
     transform: skew(-15deg);
-    background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+    background-image: linear-gradient(90deg,#005135,#387c85);
     overflow: hidden;
     position: relative;
     text-shadow: 0 1px #2f53cd;
-    width: 70%;
+    width: 50%;
 }
 
 #home-content .tagline-content {
@@ -147,7 +147,7 @@ a, a:link {
 
 #home-content .projects-container .project img {
     height: 180px;
-    background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+    background-image: linear-gradient(90deg,#005135,#387c85);
     padding-bottom: 3px;
     image-rendering: -webkit-optimize-contrast;
 }
@@ -171,7 +171,7 @@ a, a:link {
     margin: 40px 10px;
     width: 280px;
     font-size: 16px;
-    border-left: 3px solid #4598ff;
+    border-left: 3px solid #387c85;
     padding-left:10px;
 }
 

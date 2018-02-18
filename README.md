@@ -1,4 +1,4 @@
-The cityofzion.io website source.
+The hybrid.network website source.
 
 Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator.
 
