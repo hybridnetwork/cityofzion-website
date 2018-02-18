@@ -1,6 +1,6 @@
 languageCode: "en-us"
 title: "Hybrid.Network"
-baseURL: "https://hybrid.network/"
+baseURL: "http://hybrid.network/"
 pygmentsStyle: "monokai"
 pygmentsUseClasses: true
 MetaDataFormat: "yaml"
