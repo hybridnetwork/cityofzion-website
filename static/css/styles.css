@@ -371,10 +371,15 @@ a, a:link {
 
 .section .contributors-container > div {
     margin: 40px 10px;
-    width: 280px;
+    flex: 0 0 280px;
     font-size: 14px;
-    font-family: "orbitron";
 }
+
+@media (max-width: 970px) {
+     .section .contributors-container > div {
+         flex: 1 1 280px;
+     }
+ }
 
 .section .contributors-container > div a {
     color: white;
@@ -382,6 +387,7 @@ a, a:link {
 }
 
 .section .contributors-container > div img {
+    filter: grayscale(100%);
     float: left;
     max-width: 80px;
     margin-right: 20px;
