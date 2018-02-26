@@ -215,6 +215,59 @@ a, a:link {
 }
 
 /**
+ * Quick Links
+ */
+
+ .quick-links {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ @media (max-width: 970px) {
+      .quick-links {
+          width: 80%;
+          justify-content: space-between;
+          flex-direction: column;
+      }
+  }
+
+  @media (max-width: 700px) {
+       .quick-links {
+           width: 100%;
+       }
+   }
+
+ .quick-links .area {
+     flex: 0 0 270px;
+     padding: 0 0 0 15px;
+ }
+
+ @media (max-width: 970px) {
+     .quick-links .area {
+         flex: 1 1 100%;
+         padding: 0 0 20px 0;
+     }
+  }
+
+ .quick-links .area h5 {
+     text-transform: uppercase;
+     font-size: 19px;
+ }
+
+ .quick-links .area.area--green {
+     border-top: 5px solid #56BFC1;
+ }
+
+ .quick-links .area.area--red {
+     border-top: 5px solid #E4492F;
+ }
+
+ .quick-links .area.area--purple {
+     border-top: 5px solid #8539DD;
+ }
+
+/**
  * Projects
  */
 .section .projects-container {
