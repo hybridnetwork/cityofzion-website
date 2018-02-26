@@ -123,6 +123,24 @@ a, a:link {
 .section h2,
 .section h3 {
     font-family: "Helvetica Neue", Arimo, Helvetica, Arial, sans-serif;
+    padding-bottom: 10px;
+    width: min-content;
+}
+
+.section h2.red {
+    border-bottom: 5px solid #E02424;
+}
+
+.section h2.orange {
+    border-bottom: 5px solid #EEAE3F;
+}
+
+.section h2.blue {
+    border-bottom: 5px solid #009ABF;
+}
+
+.section h2.purple {
+    border-bottom: 5px solid #8539DD;
 }
 
 .section h1 {
