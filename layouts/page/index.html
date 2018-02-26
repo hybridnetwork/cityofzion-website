@@ -1,266 +1,269 @@
 {{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
+<div class="container">
+    {{ partial "navbar.html" . }}
 
-<div id="home-container">
-    <div class="section">
-        <div class="logo">
-            {{ readFile "static/images/logo.large.svg" | safeHTML }}
-        </div>
-        <div class="tagline-wrapper">
-            <div class="tagline">
-                <div class="tagline-content">
-                    A Global Hybrid-Blockchain Open-Source Community
+    <div id="home-container">
+        <div class="section">
+            <div class="logo">
+                {{ readFile "static/images/logo.large.svg" | safeHTML }}
+            </div>
+            <div class="tagline-wrapper">
+                <div class="tagline">
+                    <div class="tagline-content">
+                        A Global Hybrid-Blockchain Open-Source Community
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-wrapper">
+                <div class="description">
+                    Hybrid.Network is a global, independent group of open-source developers, designers and translators formed to support the cores and ecosystems for hybrid consensus mechanism blockchains.
                 </div>
             </div>
         </div>
 
-        <div class="description-wrapper">
-            <div class="description">
-                Hybrid.Network is a global, independent group of open-source developers, designers and translators formed to support the cores and ecosystems for hybrid consensus mechanism blockchains.
+        <div class="section quick-links">
+            <div class="area area--green">
+                <h5>Events</h5>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <li>Event 3</li>
+                </ul>
             </div>
+            <div class="area area--red">
+                <h5>Recent Posts</h5>
+                <ul>
+                    <li>Hx Launch!</li>
+                </ul>
+            </div>
+            <div class="area area--purple">
+                <h5>Projects</h5>
+                <ul>
+                    <li>Quantum is great</li>
+                    <li>Crypto</li>
+                    <li>Whales = Dolphins</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <a name="projects"></a>
+            <h2>Projects</h2>
+
+            <div class="subtitle">
+                Projects created through collaborative or individual efforts from Hybrid.Network
+            </div>
+            <div class="projects-container">
+                <div class="project">
+                    <a href="https://github.com/hybridnetwork/hxify">
+                        <img src="/images/hxify.jpg" alt="HXify" />
+                    </a>
+                    <div class="title">HXify</div>
+                    <div class="desc">HXify is a cross-platform desktop GUI wallet for the Hx blockchain.</div>
+                    <a href="https://github.com/hybridnetwork/hxify">Get HXify</a>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/hybridnetwork/hxd">
+                        <img src="/images/hxd.png" alt="HX Daemon" />
+                    </a>
+                    <div class="title">HxDaemon</div>
+                    <div class="desc">A Hx Daemon implementation built in Go.</div>
+                    <a href="https://github.com/hybridnetwork/hxwallet">View Hxd Source</a>
+                </div>
+
+                <div class="project">
+                    <a href="https://explorer.hybrid.network">
+                        <img src="/images/hxplorer.png" alt="HXplorer" />
+                    </a>
+                    <div class="title">HXplorer</div>
+                    <div class="desc">HXplorer is a block explorer and API for the Hx blockchain.</div>
+                    <a href="https://explorer.hybid.network">Visit HXplorer</a>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/hybridnetwork/hxwallet">
+                        <img src="/images/hxwallet.png" alt="HX Wallet" />
+                    </a>
+                    <div class="title">HxWallet</div>
+
+
+                    <div class="desc">A CLI wallet for Windows, OSX, and Linux users built in Go.</div>
+
+                    <a href="https://github.com/hybridnetwork/hxwallet">View Hxwallet Source</a>
+                </div>
+
+                <div class="project">
+                    <a href="http://stakepools.hybrid.network">
+                        <img src="/images/stakepools.jpg" alt="Stake Pools" />
+                    </a>
+                    <div class="title">Community Stake Pools</div>
+                    <div class="desc">Zero fee or community-split fee staking pools for the Decred and Hx hybrid blockchains.</div>
+                    <a href="http://stakepools.hybrid.network">Learn More</a>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/hybridnetwork">
+                        <img src="/images/more-on-github-hybridnetwork.png" alt="HybridNetwork GitHub" />
+                    </a>
+                    <div class="title">More to come...</div>
+                    <div class="desc">We're working on lots of things; you can follow along and help vote on priorities in our GitHub organization!</div>
+                    <a href="https://github.com/hybridnetwork">Check out our GitHub</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <a name="governance"></a>
+            <h2>Principles</h2>
+
+            <p>The community is free to choose its own targets and objectives. That said, our goal is to improve hybrid blockchains, so we will align with those team's needs and avoid retreading old ground, unless it is possible to attain a substantially higher level of quality.</p>
+
+            <div class="governance-container">
+                <div>
+                    <div class="title">no <span class="number">1</span></div>
+                    <p>Projects will be inclusive to all persons regardless of any personal differences.</p>
+                </div>
+                <div>
+                    <div class="title">no <span class="number">2</span></div>
+                    <p>Funding details will be open and transparent to the community.</p>
+                </div>
+                <div>
+                    <div class="title">no <span class="number">3</span></div>
+                    <p>Any member of Hybrid.Network can create and collaborate on projects.</p>
+                </div>
+                <div>
+                    <div class="title">no <span class="number">4</span></div>
+                    <p>Contributions including finding bugs, writing code and community engagement are rewarded with bounties when possible.</p>
+                </div>
+                <div>
+                    <div class="title">no <span class="number">5</span></div>
+                    <p>Bi-Weekly reports to the community will be made and are an important part of maintaining transparency.</p>
+                </div>
+                <div>
+                    <div class="title">no <span class="number">6</span></div>
+                    <p>Community and organizational governance will be provided by decentralized consensus when possible.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <a name="contributors"></a>
+            <h2>Contributors</h2>
+
+            <p>Code, design, community and translation contributors for Hybrid.Network</p>
+
+            <div class="contributors-container">
+
+                <div>
+                    <a href="https://github.com/buckbeakk">
+                        <img src="/images/contributors/buckbeakk.png" />
+                        <h3>buckbeakk</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/lunamoonfrog">
+                        <img src="/images/contributors/lunamoonfrog.png" />
+                        <h3>lunamoonfrog</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/bogrod">
+                        <img src="/images/contributors/bogrod.jpg" />
+                        <h3>bogrod</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/marvolo6">
+                        <img src="/images/contributors/marvolo6.png" />
+                        <h3>marvolo6</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/thearagog">
+                        <img src="/images/contributors/thearagog.png" />
+                        <h3>thearagog</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/123oliverwood123">
+                        <img src="/images/contributors/123oliverwood123.png" />
+                        <h3>123oliverwood123</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="/#contributors">
+                        <img src="/images/contributors/grinwood.jpg" />
+                        <h3>grinwood</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://twitter.com/coinyeezy">
+                        <img src="/images/contributors/coinyeezy.png" />
+                        <h3>coinyeezy</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://twitter.com/_Mr_Handsome">
+                        <img src="/images/contributors/mrhandsome.jpg" />
+                        <h3>mr. handsome</h3>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="/#contributors">
+                        <img src="/images/contributors/dobby.jpg" />
+                        <h3>dobby</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <a name="resources"></a>
+            <h2>Resources</h2>
+
+            <p>Anyone can join us to work together or be a source of technical support.</p>
+
+            <div class="resources-container">
+
+                <div>
+                    <a href="https://github.com/hybridnetwork">
+                        <img src="/images/github.png" />
+                        <h3>Fork</h3>
+                        our GitHub Repositories
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://keybase.io/team/hybridnetwork">
+                        <img src="/images/keybase.png" />
+                        <h3>Chat</h3>
+                        with us on Keybase
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://medium.com/@hybridnetwork">
+                        <img src="/images/medium.png" />
+                        <h3>Follow</h3>
+                        us on Medium
+                    </a>
+                </div>
+            </div>
+
+            <p><b>Our code is free and 100% MIT and ISC licensed; even this website!</b></p>
+
+            <p>If you feel you can improve on anything, just send us a pull request.</p>
         </div>
     </div>
-
-    <div class="section quick-links">
-        <div class="area area--green">
-            <h5>Events</h5>
-            <ul>
-                <li>Event 1</li>
-                <li>Event 2</li>
-                <li>Event 3</li>
-            </ul>
-        </div>
-        <div class="area area--red">
-            <h5>Recent Posts</h5>
-            <ul>
-                <li>Hx Launch!</li>
-            </ul>
-        </div>
-        <div class="area area--purple">
-            <h5>Projects</h5>
-            <ul>
-                <li>Quantum is great</li>
-                <li>Crypto</li>
-                <li>Whales = Dolphins</li>
-            </ul>
-        </div>
-    </div>
-    <div class="section">
-        <a name="projects"></a>
-        <h2>Projects</h2>
-
-        <div class="subtitle">
-            Projects created through collaborative or individual efforts from Hybrid.Network
-        </div>
-        <div class="projects-container">
-            <div class="project">
-                <a href="https://github.com/hybridnetwork/hxify">
-                    <img src="/images/hxify.jpg" alt="HXify" />
-                </a>
-                <div class="title">HXify</div>
-                <div class="desc">HXify is a cross-platform desktop GUI wallet for the Hx blockchain.</div>
-                <a href="https://github.com/hybridnetwork/hxify">Get HXify</a>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/hybridnetwork/hxd">
-                    <img src="/images/hxd.png" alt="HX Daemon" />
-                </a>
-                <div class="title">HxDaemon</div>
-                <div class="desc">A Hx Daemon implementation built in Go.</div>
-                <a href="https://github.com/hybridnetwork/hxwallet">View Hxd Source</a>
-            </div>
-
-            <div class="project">
-                <a href="https://explorer.hybrid.network">
-                    <img src="/images/hxplorer.png" alt="HXplorer" />
-                </a>
-                <div class="title">HXplorer</div>
-                <div class="desc">HXplorer is a block explorer and API for the Hx blockchain.</div>
-                <a href="https://explorer.hybid.network">Visit HXplorer</a>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/hybridnetwork/hxwallet">
-                    <img src="/images/hxwallet.png" alt="HX Wallet" />
-                </a>
-                <div class="title">HxWallet</div>
-
-
-                <div class="desc">A CLI wallet for Windows, OSX, and Linux users built in Go.</div>
-
-                <a href="https://github.com/hybridnetwork/hxwallet">View Hxwallet Source</a>
-            </div>
-
-            <div class="project">
-                <a href="http://stakepools.hybrid.network">
-                    <img src="/images/stakepools.jpg" alt="Stake Pools" />
-                </a>
-                <div class="title">Community Stake Pools</div>
-                <div class="desc">Zero fee or community-split fee staking pools for the Decred and Hx hybrid blockchains.</div>
-                <a href="http://stakepools.hybrid.network">Learn More</a>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/hybridnetwork">
-                    <img src="/images/more-on-github-hybridnetwork.png" alt="HybridNetwork GitHub" />
-                </a>
-                <div class="title">More to come...</div>
-                <div class="desc">We're working on lots of things; you can follow along and help vote on priorities in our GitHub organization!</div>
-                <a href="https://github.com/hybridnetwork">Check out our GitHub</a>
-
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <a name="governance"></a>
-        <h2>Principles</h2>
-
-        <p>The community is free to choose its own targets and objectives. That said, our goal is to improve hybrid blockchains, so we will align with those team's needs and avoid retreading old ground, unless it is possible to attain a substantially higher level of quality.</p>
-
-        <div class="governance-container">
-            <div>
-                <div class="title">no <span class="number">1</span></div>
-                <p>Projects will be inclusive to all persons regardless of any personal differences.</p>
-            </div>
-            <div>
-                <div class="title">no <span class="number">2</span></div>
-                <p>Funding details will be open and transparent to the community.</p>
-            </div>
-            <div>
-                <div class="title">no <span class="number">3</span></div>
-                <p>Any member of Hybrid.Network can create and collaborate on projects.</p>
-            </div>
-            <div>
-                <div class="title">no <span class="number">4</span></div>
-                <p>Contributions including finding bugs, writing code and community engagement are rewarded with bounties when possible.</p>
-            </div>
-            <div>
-                <div class="title">no <span class="number">5</span></div>
-                <p>Bi-Weekly reports to the community will be made and are an important part of maintaining transparency.</p>
-            </div>
-            <div>
-                <div class="title">no <span class="number">6</span></div>
-                <p>Community and organizational governance will be provided by decentralized consensus when possible.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <a name="contributors"></a>
-        <h2>Contributors</h2>
-
-        <p>Code, design, community and translation contributors for Hybrid.Network</p>
-
-        <div class="contributors-container">
-
-            <div>
-                <a href="https://github.com/buckbeakk">
-                    <img src="/images/contributors/buckbeakk.png" />
-                    <h3>buckbeakk</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://github.com/lunamoonfrog">
-                    <img src="/images/contributors/lunamoonfrog.png" />
-                    <h3>lunamoonfrog</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://github.com/bogrod">
-                    <img src="/images/contributors/bogrod.jpg" />
-                    <h3>bogrod</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://github.com/marvolo6">
-                    <img src="/images/contributors/marvolo6.png" />
-                    <h3>marvolo6</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://github.com/thearagog">
-                    <img src="/images/contributors/thearagog.png" />
-                    <h3>thearagog</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://github.com/123oliverwood123">
-                    <img src="/images/contributors/123oliverwood123.png" />
-                    <h3>123oliverwood123</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="/#contributors">
-                    <img src="/images/contributors/grinwood.jpg" />
-                    <h3>grinwood</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://twitter.com/coinyeezy">
-                    <img src="/images/contributors/coinyeezy.png" />
-                    <h3>coinyeezy</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="https://twitter.com/_Mr_Handsome">
-                    <img src="/images/contributors/mrhandsome.jpg" />
-                    <h3>mr. handsome</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="/#contributors">
-                    <img src="/images/contributors/dobby.jpg" />
-                    <h3>dobby</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <a name="resources"></a>
-        <h2>Resources</h2>
-
-        <p>Anyone can join us to work together or be a source of technical support.</p>
-
-        <div class="resources-container">
-
-            <div>
-                <a href="https://github.com/hybridnetwork">
-                    <img src="/images/github.png" />
-                    <h3>Fork</h3>
-                    our GitHub Repositories
-                </a>
-            </div>
-
-            <div>
-                <a href="https://keybase.io/team/hybridnetwork">
-                    <img src="/images/keybase.png" />
-                    <h3>Chat</h3>
-                    with us on Keybase
-                </a>
-            </div>
-
-            <div>
-                <a href="https://medium.com/@hybridnetwork">
-                    <img src="/images/medium.png" />
-                    <h3>Follow</h3>
-                    us on Medium
-                </a>
-            </div>
-        </div>
-
-        <p><b>Our code is free and 100% MIT and ISC licensed; even this website!</b></p>
-
-        <p>If you feel you can improve on anything, just send us a pull request.</p>
-    </div>
+    <div id="bottom-background"></div>
 </div>
 
 {{ partial "footer.html" . }}
