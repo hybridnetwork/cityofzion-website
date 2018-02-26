@@ -411,9 +411,14 @@ a, a:link {
 
 .section .resources-container > div {
     margin: 40px 10px;
-    width: 280px;
+    flex: 0 0 280px;
     font-size: 14px;
-    font-family: "orbitron";
+}
+
+@media (max-width: 970px) {
+    .section .resources-container > div {
+        flex: 1 1 280px;
+    }
 }
 
 .section .resources-container > div a {
@@ -423,6 +428,7 @@ a, a:link {
 
 .section .resources-container > div img {
     float: left;
+    filter: grayscale(100%);
     max-width: 80px;
     margin-right: 20px;
 }
