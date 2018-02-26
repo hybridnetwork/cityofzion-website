@@ -89,7 +89,6 @@ a, a:link {
  * Homepage
  */
 #home-container {
-    display: flex;
     padding: 20px 40px;
     margin: 0 auto;
 }
@@ -100,24 +99,24 @@ a, a:link {
     }
 }
 
-#home-content {
-    margin-top: 100px;
+.section {
+    padding: 50px 0;
 }
 
-#home-content h1,
-#home-content h2,
-#home-content h3 {
+.section h1,
+.section h2,
+.section h3 {
     font-family: "Helvetica Neue", Arimo, Helvetica, Arial, sans-serif;
 }
 
-#home-content h1 {
+.section h1 {
     font-size: 64px;
     letter-spacing: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#home-content h2 {
+.section h2 {
     font-size: 40px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -128,35 +127,35 @@ a, a:link {
 }
 
 @media (max-width: 890px) {
-    #home-content .logo svg {
+    .section .logo svg {
         width: 400px;
     }
 }
 
 @media (max-width: 760px) {
-    #home-content .logo svg {
+    .section .logo svg {
         width: 300px;
     }
 }
 
 @media (max-width: 620px) {
-    #home-content .logo svg {
+    .section .logo svg {
         width: 250px;
     }
 }
 
-#home-content .tagline-wrapper {
+.section .tagline-wrapper {
     overflow: hidden;
     padding-right: 12px;
 }
 
-#home-content .tagline {
+.section .tagline {
     margin: 0
     overflow: hidden;
     position: relative;
 }
 
-#home-content .tagline-content {
+.section .tagline-content {
     padding: 6px 0 4px;
     font-family: "Inconsolata";
     font-size: 29px;
@@ -165,30 +164,36 @@ a, a:link {
 }
 
 @media (max-width: 890px) {
-    #home-content .tagline-content {
+    .section .tagline-content {
         font-size: 25px;
     }
 }
 
 @media (max-width: 760px) {
-    #home-content .tagline-content {
+    .section .tagline-content {
         font-size: 20px;
     }
 }
 
 @media (max-width: 620px) {
-    #home-content .tagline-content {
+    .section .tagline-content {
         font-size: 17px;
     }
 }
 
-#home-content .description-wrapper {
+.section .description-wrapper {
     overflow: hidden;
     padding-right: 40px;
     width: 80%;
 }
 
-#home-content .description {
+@media (max-width: 650px) {
+    .section .description-wrapper {
+        width: 100%;
+    }
+}
+
+.section .description {
     font-family: "PT Serif";
     margin-top: 20px;
     font-size: 25px;
@@ -196,14 +201,14 @@ a, a:link {
 }
 
 @media (max-width: 890px) {
-    #home-content .description {
+    .section .description {
         font-size: 22px;
         line-height: 30px;
     }
 }
 
 @media (max-width: 760px) {
-    #home-content .description {
+    .section .description {
         font-size: 18px;
         line-height: 28px;
     }
@@ -213,26 +218,26 @@ a, a:link {
 /**
  * Events
  */
-#home-content .events-container {
+.section .events-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#home-content .events-container .event {
+.section .events-container .event {
     margin: 40px 10px;
     width: 280px;
     font-size: 16px;
 }
 
-#home-content .events-container .event img {
+.section .events-container .event img {
     height: 180px;
     background-image: linear-gradient(90deg,#005135,#387c85);
     padding-bottom: 3px;
     image-rendering: -webkit-optimize-contrast;
 }
 
-#home-content .events-container .event .title {
+.section .events-container .event .title {
     font-family: "orbitron";
     text-transform: uppercase;
     margin-top: 10px;
@@ -241,26 +246,26 @@ a, a:link {
 /**
  * Projects
  */
-#home-content .projects-container {
+.section .projects-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#home-content .projects-container .project {
+.section .projects-container .project {
     margin: 40px 10px;
     width: 280px;
     font-size: 16px;
 }
 
-#home-content .projects-container .project img {
+.section .projects-container .project img {
     height: 180px;
     background-image: linear-gradient(90deg,#005135,#387c85);
     padding-bottom: 3px;
     image-rendering: -webkit-optimize-contrast;
 }
 
-#home-content .projects-container .project .title {
+.section .projects-container .project .title {
     font-family: "orbitron";
     text-transform: uppercase;
     margin-top: 10px;
@@ -269,13 +274,13 @@ a, a:link {
 /**
  * Governance
  */
-#home-content .governance-container {
+.section .governance-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#home-content .governance-container > div {
+.section .governance-container > div {
     margin: 40px 10px;
     width: 280px;
     font-size: 16px;
@@ -283,17 +288,17 @@ a, a:link {
     padding-left:10px;
 }
 
-#home-content .governance-container > div .title {
+.section .governance-container > div .title {
     font-family: "orbitron";
     vertical-align: top;
 }
 
-#home-content .governance-container > div .title .no {
+.section .governance-container > div .title .no {
     vertical-align: top;
     margin-top: 10px;
 }
 
-#home-content .governance-container > div .title .number {
+.section .governance-container > div .title .number {
     font-size:60px;
     padding-top: -10px;
 }
@@ -301,31 +306,31 @@ a, a:link {
 /**
  * Contributors
  */
- #home-content .contributors-container {
+ .section .contributors-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#home-content .contributors-container > div {
+.section .contributors-container > div {
     margin: 40px 10px;
     width: 280px;
     font-size: 14px;
     font-family: "orbitron";
 }
 
-#home-content .contributors-container > div a {
+.section .contributors-container > div a {
     color: white;
     text-decoration: none;
 }
 
-#home-content .contributors-container > div img {
+.section .contributors-container > div img {
     float: left;
     max-width: 80px;
     margin-right: 20px;
 }
 
-#home-content .contributors-container > div h3 {
+.section .contributors-container > div h3 {
     text-transform: uppercase;
     margin-top: 28px;
     margin-bottom: 2px;
@@ -335,31 +340,31 @@ a, a:link {
 /**
  * Resources
  */
- #home-content .resources-container {
+ .section .resources-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#home-content .resources-container > div {
+.section .resources-container > div {
     margin: 40px 10px;
     width: 280px;
     font-size: 14px;
     font-family: "orbitron";
 }
 
-#home-content .resources-container > div a {
+.section .resources-container > div a {
     color: white;
     text-decoration: none;
 }
 
-#home-content .resources-container > div img {
+.section .resources-container > div img {
     float: left;
     max-width: 80px;
     margin-right: 20px;
 }
 
-#home-content .resources-container > div h3 {
+.section .resources-container > div h3 {
     text-transform: uppercase;
     margin-top: 14px;
     margin-bottom: 2px;

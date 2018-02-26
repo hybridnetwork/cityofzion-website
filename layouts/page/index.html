@@ -2,7 +2,7 @@
 {{ partial "navbar.html" . }}
 
 <div id="home-container">
-    <div id="home-content">
+    <div class="section">
         <div class="logo">
             {{ readFile "static/images/logo.large.svg" | safeHTML }}
         </div>
@@ -19,7 +19,9 @@
                 Hybrid.Network is a global, independent group of open-source developers, designers and translators formed to support the cores and ecosystems for hybrid consensus mechanism blockchains.
             </div>
         </div>
+    </div>
 
+    <div class="section">
         <a name="events"></a>
         <h2>Events</h2>
 
@@ -52,7 +54,8 @@
                 <a href="/events/datavizbounty">Learn More</a>
             </div>
         </div>
-
+    </div>
+    <div class="section">
         <a name="projects"></a>
         <h2>Projects</h2>
 
@@ -116,7 +119,8 @@
 
             </div>
         </div>
-
+    </div>
+    <div class="section">
         <a name="governance"></a>
         <h2>Principles</h2>
 
@@ -148,7 +152,8 @@
                 <p>Community and organizational governance will be provided by decentralized consensus when possible.</p>
             </div>
         </div>
-
+    </div>
+    <div class="section">
         <a name="contributors"></a>
         <h2>Contributors</h2>
 
@@ -226,7 +231,8 @@
                 </a>
             </div>
         </div>
-
+    </div>
+    <div class="section">
         <a name="resources"></a>
         <h2>Resources</h2>
 
