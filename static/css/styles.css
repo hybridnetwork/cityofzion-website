@@ -85,9 +85,6 @@ a, a:link {
     color: #c5c5c5;
 }
 
-.coz-font {
-    font-family: "orbitron";
-}
 
 .vspace {
     margin-top: 100px;
@@ -102,20 +99,24 @@ a, a:link {
  */
 #home-container {
     display: flex;
-    justify-content: center;
     padding: 20px 40px;
+    margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+    #home-container {
+        max-width: 960px;
+    }
 }
 
 #home-content {
-    max-width: 940px;
-    min-width: 480px;
     margin-top: 100px;
 }
 
 #home-content h1,
 #home-content h2,
 #home-content h3 {
-    font-family: "orbitron";
+    font-family: "Helvetica Neue", Arimo, Helvetica, Arial, sans-serif;
 }
 
 #home-content h1 {
@@ -135,30 +136,88 @@ a, a:link {
     margin-bottom: 16px;
 }
 
+@media (max-width: 890px) {
+    #home-content .logo svg {
+        width: 400px;
+    }
+}
+
+@media (max-width: 760px) {
+    #home-content .logo svg {
+        width: 300px;
+    }
+}
+
+@media (max-width: 620px) {
+    #home-content .logo svg {
+        width: 250px;
+    }
+}
+
 #home-content .tagline-wrapper {
     overflow: hidden;
     padding-right: 12px;
 }
 
 #home-content .tagline {
-    padding: 0 15px 0 30px;
-    margin: 0 0 0 -15px;
-    transform: skew(-15deg);
-    background-image: linear-gradient(90deg,#005135,#387c85);
+    margin: 0
     overflow: hidden;
     position: relative;
-    text-shadow: 0 1px #2f53cd;
-    width: 50%;
 }
 
 #home-content .tagline-content {
     padding: 6px 0 4px;
-    -webkit-transform: skew(15deg);
-    transform: skew(15deg);
-    font-size: 17px;
-    font-weight: 400;
+    font-family: "Inconsolata";
+    font-size: 29px;
+    font-weight: 700;
     letter-spacing: .75px;
 }
+
+@media (max-width: 890px) {
+    #home-content .tagline-content {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 760px) {
+    #home-content .tagline-content {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    #home-content .tagline-content {
+        font-size: 17px;
+    }
+}
+
+#home-content .description-wrapper {
+    overflow: hidden;
+    padding-right: 40px;
+    width: 80%;
+}
+
+#home-content .description {
+    font-family: "PT Serif";
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+@media (max-width: 890px) {
+    #home-content .description {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 760px) {
+    #home-content .description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
 
 /**
  * Events
