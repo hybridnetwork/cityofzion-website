@@ -14,12 +14,11 @@ body, html {
     color: #fff;
     -webkit-font-smoothing: antialiased;
     font-family: Helvetica Neue,arial,sans-serif;
-    min-width: 600px;
     font-size: 18px;
 }
 
 body {
-    background: #212146 url(/images/page-bg-small.png) top repeat;
+    background: #252525 url('/images/top.png') top no-repeat;
     background-size: cover;
 }
 
@@ -27,17 +26,43 @@ a, a:link {
     color: #73b1ff;
 }
 
-.masthead {
+.container {
     display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+@media (min-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 890px) {
+    .container {
+        display: none;
+    }
+}
+
+.masthead {
+    flex: 1 1 100%;
+    display:  flex;
+}
+
+.masthead .title {
+    height: 30px;
+    flex: 0 0 250px;
 }
 
 .masthead .navigation {
-    flex-grow: 1;
+    height: 30px;
+    flex: 1 1 100%;
     text-align: right;
     font-family: "Inconsolata", sans-serif;
     font-weight: 700;
