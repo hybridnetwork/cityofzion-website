@@ -332,11 +332,18 @@ a, a:link {
 
 .section .governance-container > div {
     margin: 40px 10px;
-    width: 280px;
+    flex: 0 0 280px;
     font-size: 16px;
     border-left: 3px solid #387c85;
     padding-left:10px;
+    padding-right: 30px;
 }
+
+@media (max-width: 970px) {
+     .section .governance-container > div {
+         flex: 1 1 280px;
+     }
+ }
 
 .section .governance-container > div .title {
     font-family: "orbitron";
