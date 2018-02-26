@@ -1,4 +1,7 @@
 {{ partial "header.html" . }}
+<div id="lattice">
+    {{ readFile "static/images/lattice.svg" | safeHTML }}
+</div>
 <div class="container">
     {{ partial "navbar.html" . }}
 

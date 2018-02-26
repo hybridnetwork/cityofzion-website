@@ -20,6 +20,19 @@ body, html {
 body {
     background: #252525 url('/images/top.png') top no-repeat;
     background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#lattice {
+    position: absolute;
+    z-index: -1;
+    height: 525px;
+    overflow: hidden;
+    width: 900px;
+    right: 0;
+    top: -40px;
+    right: -180px;
 }
 
 a, a:link {
