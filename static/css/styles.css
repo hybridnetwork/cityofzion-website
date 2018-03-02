@@ -18,10 +18,12 @@ body, html {
 }
 
 body {
-    background: #252525 url('/images/top.png') top no-repeat;
+    background: url('/images/top-2.png'), url(/images/stardust-dark.png);
+    background-repeat: no-repeat, repeat;
     background-size: cover;
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 300px;
 }
 
 #lattice {
@@ -31,8 +33,14 @@ body {
     overflow: hidden;
     width: 900px;
     right: 0;
-    top: -40px;
-    right: -180px;
+    top: -200px;
+    right: -121px;
+    opacity: 0.4;
+}
+@media (min-width: 960px){
+    #lattice {
+        opacity: 1;
+    }
 }
 
 a, a:link {
@@ -41,7 +49,7 @@ a, a:link {
 
 .container {
     position: relative;
-    height: 100%;
+    /*height: 100%;*/
     min-height: 100%;
     margin: 0 auto;
     max-width: 960px;
@@ -57,11 +65,23 @@ a, a:link {
     margin: 40px 0;
     flex: 1 1 100%;
     display:  flex;
+    padding: 0 40px;
+}
+
+@media (min-width: 1200px) {
+    .masthead {
+      margin: 40px auto;
+      flex: 1 1 100%;
+      display:  flex;
+      max-width: 80%;
+      width: 1200px;
+}
 }
 
 .masthead .title {
     height: 30px;
     flex: 0 0 250px;
+
 }
 
 .masthead .navigation {
@@ -76,7 +96,7 @@ a, a:link {
 
 @media (min-width: 960px) {
     .masthead .navigation {
-        display: none;
+        /*display: none;*/
     }
 }
 
@@ -100,6 +120,8 @@ a, a:link {
  */
 #home-container {
     margin: 0 auto;
+    margin-top: 150px;
+    padding-bottom: 330px;
 }
 
 @media (min-width: 960px) {
@@ -141,19 +163,19 @@ a, a:link {
 }
 
 .section h2.red {
-    border-bottom: 5px solid #E02424;
+    border-bottom: 9px solid #E02424;
 }
 
 .section h2.orange {
-    border-bottom: 5px solid #EEAE3F;
+    border-bottom: 9px solid #EEAE3F;
 }
 
 .section h2.blue {
-    border-bottom: 5px solid #009ABF;
+    border-bottom: 9px solid #009ABF;
 }
 
 .section h2.purple {
-    border-bottom: 5px solid #8539DD;
+    border-bottom: 9px solid #8539DD;
 }
 
 .section h1 {
@@ -164,10 +186,12 @@ a, a:link {
 }
 
 .section h2 {
-    font-size: 40px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+    /* Contributors: */
+    font-family: HelveticaNeue-Bold;
+    font-size: 49px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-bottom: 0;
 }
 
 @media (max-width: 890px) {
@@ -205,6 +229,8 @@ a, a:link {
     font-size: 29px;
     font-weight: 700;
     letter-spacing: .75px;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 890px) {
@@ -228,7 +254,7 @@ a, a:link {
 .section .description-wrapper {
     overflow: hidden;
     padding-right: 40px;
-    width: 80%;
+    /*width: 90%;*/
 }
 
 @media (max-width: 650px) {
@@ -240,8 +266,10 @@ a, a:link {
 .section .description {
     font-family: "PT Serif";
     margin-top: 20px;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 41px;
 }
 
 @media (max-width: 890px) {
@@ -311,6 +339,25 @@ a, a:link {
      border-top: 5px solid #8539DD;
  }
 
+
+.principles{
+    background-image: url('../images/principles-bg.png');
+    background-size: 100%;
+    margin: -20px;
+    padding: 15px 40px;
+}
+.contributors{
+    background-position: 200px 0;
+}
+.principles p{
+    /* The community is fre: */
+    font-family: 'PT Serif';
+    font-size: 23px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    max-width: 80%;
+}
+
 /**
  * Projects
  */
@@ -355,15 +402,17 @@ a, a:link {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 40px 0;
 }
 
 .section .governance-container > div {
-    margin: 40px 10px;
+    margin: 20px 10px;
     flex: 0 0 280px;
     font-size: 16px;
     border-left: 3px solid #387c85;
     padding-left:10px;
     padding-right: 30px;
+    line-height: 1.2;
 }
 
 @media (max-width: 970px) {
@@ -375,6 +424,9 @@ a, a:link {
 .section .governance-container > div .title {
     font-family: "orbitron";
     vertical-align: top;
+    float: left;
+    height: 100%;
+    margin-right: 20px;
 }
 
 .section .governance-container > div .title .no {
@@ -424,6 +476,7 @@ a, a:link {
     margin-top: 28px;
     margin-bottom: 2px;
     font-size: 12px;
+    float: left;
 }
 
 /**
@@ -496,14 +549,15 @@ a, a:link {
     z-index: -1;
     height: 1774px;
     overflow: hidden;
-    width: 1440px;
-    right: -100px;
+    left: 0;
+    right: 0;
     background-color: #252525;
     background-image: url('/images/bottom.png');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -1774px;
+    opacity: 0.3;
 }
 
 @media (min-width: 1100px) {
