@@ -65,7 +65,7 @@ a, a:link {
     margin: 40px 0;
     flex: 1 1 100%;
     display:  flex;
-    padding: 0 40px;
+    /*padding: 0 40px;*/
 }
 
 @media (min-width: 1200px) {
@@ -73,14 +73,15 @@ a, a:link {
       margin: 40px auto;
       flex: 1 1 100%;
       display:  flex;
-      max-width: 80%;
-      width: 1200px;
+      /*max-width: 80%;
+      width: 1200px;*/
 }
 }
 
 .masthead .title {
     height: 30px;
     flex: 0 0 250px;
+    font-weight: 700;
 
 }
 
@@ -312,33 +313,35 @@ a, a:link {
 
  .quick-links .area {
      flex: 0 0 270px;
-     padding: 0 0 0 15px;
  }
 
  @media (max-width: 970px) {
      .quick-links .area {
          flex: 1 1 100%;
-         padding: 0 0 20px 0;
+         /*padding: 0 0 20px 0;*/
      }
   }
 
  .quick-links .area h5 {
      text-transform: uppercase;
      font-size: 19px;
+     margin: 15px 0 30px;
  }
 
  .quick-links .area.area--green {
      border-top: 5px solid #56BFC1;
  }
 
+
  .quick-links .area.area--red {
      border-top: 5px solid #E4492F;
  }
-
  .quick-links .area.area--purple {
      border-top: 5px solid #8539DD;
  }
-
+ .green li a{ border-color: #56BFC1 !important; }
+ .red li a{ border-color: #E4492F !important; }
+ .purple li a{ border-color: #8539DD !important; }
 
 .principles{
     background-image: url('../images/principles-bg.png');
@@ -564,4 +567,38 @@ a, a:link {
     #bottom-background {
         right: -250px;
     }
+}
+
+
+/* Random updates sry im bad */
+
+a, a:link {
+    color: #eee;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.section.quick-links ul{
+    padding: 0;
+}
+
+.section.quick-links li{
+    list-style: none;
+}
+
+.section.quick-links li a, .link{
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    border-radius 14px;
+    padding: 10px;
+    border-radius: 3px;
+    border-left: 5px solid;
+    background-color: #424242;
+    box-sizing: border-box;
+}
+
+.section.quick-links li a:hover, .link:hover{
+    background-color: #333;
+    color: #fff;
 }
