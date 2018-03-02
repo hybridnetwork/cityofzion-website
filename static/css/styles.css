@@ -188,7 +188,7 @@ a, a:link {
 
 .section h2 {
     /* Contributors: */
-    font-family: HelveticaNeue-Bold;
+    font-family: "Helvetica";
     font-size: 49px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -290,7 +290,6 @@ a, a:link {
 /**
  * Quick Links
  */
-
  .quick-links {
      display: flex;
      justify-content: space-between;
@@ -425,7 +424,6 @@ a, a:link {
  }
 
 .section .governance-container > div .title {
-    font-family: "orbitron";
     vertical-align: top;
     float: left;
     height: 100%;
